@@ -24,8 +24,72 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+  <div class="wholePageContainer"> <!-- This div tag contains the entire rest of the document. Root of the DOM -->
+    <div class="headingPicContainer">
+      <h1>Isa Muran's Webpage</h1>
+      <img src="img/me.jpg" alt="me :D" class="pfp">
+    </div>
+    <h3>Sections</h3>
+    <a href="#whoamisection">#whoami</a><br>
+    <a href="#projects">#Projects</a><br>
+    <a href="#tools">#Tools</a><br>
+    <a href="#about">#About</a><br>
+    <a href="#contact">#Contact</a><br>
+    <h3>Useful Links</h3>
+    <a href="git.isamuran.xyz">Git Server</a>
+    <p>placeholder... more links coming soon...</p>
+    <pre class="whoami" id="whoamisection">$ whoami ?</pre>
+    <p>
+      I'm Isa. I'm a software engineer living in former Yugoslavia. Computer technology is the swiss army knife
+      I use on a regular basis to create systems and applications for a variety of users. I hope to one day create
+      useful applications and products that help others as they have helped me.
+    </p>
+    <h2 id="projects">Projects</h2>
+    <p><a href="https://yugoslaviagis.com">Yugoslavia GIS</a>- a GIS app focusing on former yugoslavian countries.</p>
+    <p><a href="https://resume.isamuran.xyz">My Resume</a>- a web version of my resume created using React, Typescript, and TailwindCSS.</p>
+    <p>placeholder for upcoming project...</p>
+    <h2 id="tools">Tools</h2>
+    <div class="listContainer">
+      <ul class="list-column">
+        <li>Python</li>
+        <li>C++</li>
+        <li>React</li>
+        <li>Typescript</li>
+        <li>Kotlin</li>
+        <li>C</li>
+        <li>postgreSQL</li>
+        <li>C#</li>
+        <li>Dart</li>
+        <li>Bash</li>
+      </ul>
+      <ul class="list-column">
+        <li>Jira</li>
+        <li>Git</li>
+        <li>Trello</li>
+        <li>JetBrains IDE</li>
+        <li>Linux</li>
+        <li>LaTeX</li>
+        <li>ROS</li>
+        <li>arduino IDE</li>
+      </ul>
+    </div>
+    <h2 id="about">About This Site</h2>
+    <p>What do you think of this site? Why do you think I made it the way it is? </p>
+    <p><em>Who is the intended user?</em></p>
+    <p>It's me. I'm the intended user. And thus, the site is given purpose.
+      I needed a directory that I can easily access on the internet from any device and
+      have access to select files and servers. There are many ways to do this,
+      I have chosen a website for the time being.
+      This site has no fancy styling or graphics. It is a purely functional site written in HTML and CSS.
+      The only piece of JavaScript is a one-liner in the contact section that obfuscates my email
+      so that I reduce the chance of receiving spam mail.
+    </p>
+    <h2 id="contact">Contact Me</h2>
+    <p><a href="#" class="email" onclick="location.href='mailto:isamuranable@gmail.com';return false;"></a>
+      for any questions or inquiries.
+    </p>
+  </div>
+
 
 </body>
 

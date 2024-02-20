@@ -15,6 +15,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -83,6 +84,56 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.wholePageContainer { /* margins and sizing make the content look more centered */
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.headingPicContainer { /* container used for styling the heading and my picture */
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  max-height: 87.67px;
+}
+
+.pfp {
+  width: auto;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.whoami { /* styling to achieve something that looks like a terminal command */
+  display: inline-block;
+  background-color: #333; /* Dark background */
+  color: #fff; /* Light text */
+  font-family: monospace; /* Monospaced font */
+  padding: 10px; /* Some padding around the text */
+  margin: 0; /* Margins for spacing */
+  border-radius: 5px; /* Rounded corners */
+  overflow: auto; /* Adds a scrollbar if content overflows */
+}
+
+.listContainer { /* styling for double column lists in my tools section */
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.list-column {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  list-style-type: none; /* Removes default list styling */
+}
+
+.email::before { /* class for obfuscating my email address */
+  content: "isamuranable@gmail.com";
+  visibility: visible;
+}
+.email {
+  visibility: hidden;
+}
 
 /* ==========================================================================
    Helper classes
